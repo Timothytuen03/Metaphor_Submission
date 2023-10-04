@@ -66,7 +66,7 @@ app.post('/api/generate', async (req, res) => {
         startPublishedDate: '2023-01-01'
     }).then(data => {
         console.log(data)
-        data.data.results;
+        res.send(data.results);
     }).catch(err => {
         console.log(err);
         res.send(err);
